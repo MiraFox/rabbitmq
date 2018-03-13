@@ -1,4 +1,8 @@
 #!/bin/sh
 
-rabbitmq-server $@
+sleep 10
+
+rabbitmqctl list_users
+
+#rabbitmq-server $@
 
