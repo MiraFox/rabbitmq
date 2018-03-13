@@ -1,8 +1,9 @@
-#!/bin/sh
+#!/bin/bash
 
-sleep 10
+( sleep 10 ; \
 
-rabbitmqctl list_users
+/create_users.sh ; \
 
-#rabbitmq-server $@
+) &
 
+rabbitmq-server $@
