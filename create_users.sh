@@ -1,6 +1,7 @@
 #!/bin/bash
 
 rabbitmqctl add_vhost /
+rabbitmqctl delete_user guest
 
 for user in `cat /opt/list_users`
 do
